@@ -1,0 +1,7 @@
+.form {
+  width: 700px;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(to right, #8d57e6, #9342df 1px, #e5e5f7 1px, #f0e4f3);
+}
