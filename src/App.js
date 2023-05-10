@@ -63,7 +63,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://facerecapp-gikx.onrender.com/imageurl', {
+      fetch('https://faceappbackend-b4p3.onrender.com/imageurl', {
          method: 'post',
          headers: {'Content-Type': 'application/json'},
          body: JSON.stringify({
@@ -74,7 +74,7 @@ class App extends Component {
       .then(response => {
         console.log('hi', response)
         if (response) {
-          fetch('https://facerecapp-gikx.onrender.com/image', {
+          fetch('https://faceappbackend-b4p3.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
